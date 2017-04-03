@@ -1,0 +1,37 @@
+[
+  {
+    "category_path":[1,2,3,4,5],
+    "predicates":[
+      {
+        "key":"name",
+        "operator":1,
+        "value":"\\bbegagnad"
+      }
+    ]
+  },
+  {
+    "category_path":[1,2],
+    "predicates":[
+      {
+        "key":"name",
+        "operator":1,
+        "value":"\\bbord"
+      }
+    ]
+  },
+  {
+    "category_path":[1,2,3],
+    "predicates":[
+      {
+        "key":"category_ids",
+        "operator":1,
+        "value": 2
+      },
+      {
+        "key":"name",
+        "operator":1,
+        "value":"\\brunt"
+      }
+    ]
+  }
+]

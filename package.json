@@ -1,0 +1,14 @@
+{
+  "name": "pigeonhole",
+  "version": "1.0.0",
+  "description": "Product Category Mapping",
+  "main": "lib/pigeonhole.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^1.1.4"
+  }
+}
