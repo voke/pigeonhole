@@ -22,11 +22,12 @@ const Categorizer = require('pigeonhole').Categorizer;
 
 let categorizer = new Categorizer('path/to/source/file.json');
 
-let sampleRecord = {
-  merchant_category: ['bord', 'hem & inredning', 'möbler']
+let record = {
+	bucket: 'ahlens',
+	merchant_category: ['bord', 'hem & inredning', 'möbler']
 }
 
-categorizer.categorize(sampleRecord) // => [123,456]
+categorizer.categorize(record.bucket, record.merchant_category) // => [123,456]
 ```
 
 ## Mapper
