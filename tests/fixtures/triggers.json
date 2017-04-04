@@ -1,11 +1,11 @@
 [
   {
-    "category_path":[1,2,3,4,5],
+    "category_path":[1],
     "predicates":[
       {
         "key":"name",
         "operator":1,
-        "value":"\\bbegagnad"
+        "value":"möbler"
       }
     ]
   },
@@ -15,7 +15,7 @@
       {
         "key":"name",
         "operator":1,
-        "value":"\\bbord"
+        "value":"bord*"
       }
     ]
   },
@@ -30,7 +30,7 @@
       {
         "key":"name",
         "operator":1,
-        "value":"\\brunt"
+        "value":"*med hjul*"
       }
     ]
   }

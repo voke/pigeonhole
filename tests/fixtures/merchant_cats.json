@@ -1,0 +1,16 @@
+{
+  "ahlens": {
+    "banned": [
+      "böcker"
+    ],
+    "mapped": {
+      "bord": [
+        1,
+        2
+      ],
+      "möbler": [
+        1
+      ]
+    }
+  }
+}
