@@ -30,7 +30,7 @@
       {
         "key":"name",
         "operator":1,
-        "value":"*med hjul*"
+        "value":"*med hjul*,hjul"
       }
     ]
   }
