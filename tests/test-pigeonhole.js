@@ -1,20 +1,19 @@
 
 const assert = require('assert');
-const Pigeonhole = require('../pigeonhole.js');
+const Pigeonhole = require('../lib/pigeonhole.js');
 
-let path = require('path');
-let dummyPath = path.join(__dirname, 'fixtures', 'dummy.json');
+let categorizer = new Pigeonhole.Categorizer('tests/fixtures/merchant_cats.json');
+let mapper = new Pigeonhole.Mapper('tests/fixtures/triggers.json');
 
-let ph = new Pigeonhole(dummyPath);
-
-let sampleRecord = {
-  name: 'Runt bord med stolar'
+let record = {
+  bucket_id: 'ahlens',
+  name: 'stickad glittertröja',
+  description: 'En väldigt fin stickad tröja',
+  merchant_category: ["stickade tröjor", "kläder"],
+  category_ids: [1,2,3]
 }
 
-// Test filterTriggers()
-// let triggers = ph.filterTriggers([1,2]);
-// assert.equal(triggers.length, 1);
+let primaryIds = categorizer.categorize(record.bucket_id, record.merchant_category);
+let finalIds = mapper.evaluateWithCategoryIds(record, primaryIds);
 
-let ids = ph.evaluate(sampleRecord);
-
-assert.deepEqual(ids, [3]);
+assert.deepEqual(finalIds.toUniqIds(), [33]);

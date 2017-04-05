@@ -4,13 +4,10 @@
       "böcker"
     ],
     "mapped": {
-      "bord": [
-        1,
-        2
-      ],
-      "möbler": [
-        1
-      ]
+      "bord": [1,2],
+      "möbler": [1],
+      "stickade tröjor": [11,22,33],
+      "kläder": [11]
     }
   }
 }

@@ -33,5 +33,20 @@
         "value":"*med hjul*,hjul"
       }
     ]
+  },
+  {
+    "category_path":[11],
+    "predicates":[{ "key":"name", "operator":1, "value":"kläder" }]
+  },
+  {
+    "category_path":[11,22],
+    "predicates":[{ "key":"name", "operator":1, "value":"tröja" }]
+  },
+  {
+    "category_path":[11,22,33],
+    "predicates":[
+      { "key":"name", "operator":1, "value":"stickad" },
+      { "key":"category_ids", "operator":1, "value": 22 }
+    ]
   }
 ]
