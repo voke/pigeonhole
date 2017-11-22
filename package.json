@@ -1,6 +1,6 @@
 {
   "name": "pigeonhole",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Product Category Mapping",
   "main": "lib/pigeonhole.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    
+
   }
 }
